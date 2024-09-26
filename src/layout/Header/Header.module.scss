@@ -1,0 +1,38 @@
+@import "styles/vars.scss";
+
+.header {
+  height: 100px;
+  background-color: hsla(204, 37%, 39%, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+  &__logo {
+    font-weight: 900;
+    color: #fff;
+    font-size: 38px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    right: 12px;
+
+    &__link {
+      display: flex;
+      color: #ccc;
+      transition: color 0.3s ease;
+      padding: 8px 16px;
+      border-radius: 20px;
+      text-decoration: none;
+    }
+
+    &__linkActive {
+      color: #20416b;
+      background-color: #fff;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.registration {
+  background-image: url("assets/images/background.svg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 100px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 1000px;
+    height: 500px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.75); /* Сделаем фон менее прозрачным */
+    z-index: 1; /* Поставим поверх фонового изображения */
+    &__title {
+      color: rgb(63, 108, 140);
+      font-family: Inter;
+      font-size: 60px;
+      font-weight: 900;
+      line-height: 73px;
+      text-align: center;
+    }
+    &__registration {
+      &__button {
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        background: rgb(85, 125, 153);
+        width: 450px;
+        height: 50px;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+      }
+      &__input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        & label {
+          font-size: 20px;
+          color: rgb(63, 108, 140); /* Сделаем текст более контрастным */
+        }
+
+        & input {
+          padding: 10px;
+          border-radius: 5px;
+          border: none;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+}
